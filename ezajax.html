@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EZ Ajax</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="exajax.js"></script>
+</head>
+<body>
+<h1>EZ Ajax</h1>
+
+<h3>Type</h3>
+<input type="radio" id="getMethod" name="method" value="GET" checked="checked"/>
+<label for="getMethod"><i>GET</i></label>
+<input type="radio" id="postMethod" name="method" value="POST"/>
+<label for="postMethod"><i>POST</i></label>
+<br />
+
+<h3>URL</h3>
+<input type="text" id="url" name="url" placeholder="URL" onkeyup="ezajax.enterPressedCheck(event);" style="width: 300px;"/>
+<br />
+
+<h3>Params</h3>
+<input type="text" id="params" name="params" placeholder="Params" onkeyup="ezajax.enterPressedCheck(event);" style="width: 300px;"/>
+<br />
+<br />
+
+<input type="button" value="Submit" id="submit" onclick="ezajax.submit();"/>
+
+<div id="results"></div>
+
+</body>
+</html>
